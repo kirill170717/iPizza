@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#353535</color>
+    <color name="colorTextPrimary">#DCDCDC</color>
+    <color name="colorBackgroundGradientStart">#141414</color>
+    <color name="colorBackgroundGradientEnd">#1E1E1E</color>
+    <color name="colorBackgroundInput">#B2EEEEEE</color>
+    <color name="colorTextHint">#747474</color>
+</resources>
