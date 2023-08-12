@@ -6,16 +6,15 @@ plugins {
 
 android {
     namespace 'com.rinnedander.ipizza'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.rinnedander.ipizza"
-        minSdk 26
-        targetSdk 33
+        minSdk 21
+        targetSdk 34
         versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionName "1.0.0"
+        buildConfigField("String", "API_URL", "\"https://springboot-kotlin-demo.herokuapp.com/\"")
     }
 
     buildTypes {
@@ -25,17 +24,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
     }
+
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '18'
     }
 }
 
 dependencies {
-//Android core
+    //Android core
     implementation "androidx.core:core-ktx:$android_core_version"
     implementation "androidx.appcompat:appcompat:$app_compat_version"
 
@@ -44,7 +45,6 @@ dependencies {
 
     //DI with Dagger2 for Android
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
 

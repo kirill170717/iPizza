@@ -7,13 +7,11 @@ plugins {
 
 android {
     namespace 'com.rinnedander.presentation'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0.0"
+        targetSdk 34
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -25,12 +23,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '18'
     }
 
     buildFeatures {
@@ -45,9 +43,6 @@ dependencies {
 
     //Material
     implementation "com.google.android.material:material:$material_version"
-
-    //Zoom image view
-    implementation "com.github.MikeOrtiz:TouchImageView:$zoom_image_version"
 
     //Mvvm
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
