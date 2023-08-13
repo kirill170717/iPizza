@@ -2,6 +2,7 @@
 <resources>
     <string name="pizza_photo_description" translatable="false">Pizza photo</string>
     <string name="search_button_description" translatable="false">Search button</string>
+    <string name="back_button_description" translatable="false">Back button</string>
     <string name="swipe_bar_description" translatable="false">Swipe to close</string>
     <string name="i_pizza_logo" translatable="false">iPizza logo</string>
     <string name="image_description" translatable="false">Gallery image</string>
