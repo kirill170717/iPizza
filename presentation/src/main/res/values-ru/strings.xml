@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pizza_menu_title">Меню</string>
+    <string name="add_to_card_label">Добавить в корзину</string>
+    <string name="pizza_search_hint">Напиши что-нибудь</string>
+    <string name="orders_title">Корзина</string>
+    <string name="place_order_label">Разместить заказ</string>
+    <string name="checkout_label">Проверка</string>
+    <string name="order_success_label">Заказ был успешно отправлен!</string>
+    <string name="order_success_description">Мы свяжемся с вами в ближайшее время, чтобы подтвердить детали заказа</string>
+    <string name="order_success_button_label">Вернуться в меню</string>
+    <string name="internet_error_message">Пожалуйста, проверьте ваше подключение к Интернету</string>
+    <string name="clear_cart_warning_label">Вы уверены, что хотите очистить корзину?</string>
+    <string name="common_yes">Да</string>
+    <string name="common_close">Закрыть</string>
+    <string name="remove_order_warning_label">Вы уверены, что хотите удалить этот товар из своей корзины?</string>
+</resources>
