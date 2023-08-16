@@ -1,8 +1,8 @@
 package com.rinnedander.ipizza.di.components
 
 import com.rinnedander.ipizza.ui.app.Application
-import dagger.BindsInstance
 import dagger.Component
+import dagger.BindsInstance
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
