@@ -1,4 +1,4 @@
-package com.trinnedander.presentation.fragments.pizza.menu
+package com.rinnedander.presentation.fragments.pizza.menu
 
 import android.os.Bundle
 import android.view.View
