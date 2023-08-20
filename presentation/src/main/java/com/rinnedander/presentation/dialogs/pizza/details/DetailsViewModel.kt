@@ -1,13 +1,13 @@
 package com.rinnedander.presentation.dialogs.pizza.details
 
+import io.reactivex.rxjava3.core.Flowable
+import io.reactivex.rxjava3.processors.BehaviorProcessor
+import io.reactivex.rxjava3.processors.PublishProcessor
 import com.rinnedander.presentation.core.mvvm.BaseViewModel
 import com.rinnedander.presentation.utils.subscribeToProcessor
 import com.rinnedander.domain.model.Pizza
 import com.rinnedander.domain.usecase.order.OrderAdd
 import com.rinnedander.domain.usecase.pizza.PizzaGet
-import io.reactivex.rxjava3.core.Flowable
-import io.reactivex.rxjava3.processors.BehaviorProcessor
-import io.reactivex.rxjava3.processors.PublishProcessor
 
 class DetailsViewModel(
     pizzaId: Int,

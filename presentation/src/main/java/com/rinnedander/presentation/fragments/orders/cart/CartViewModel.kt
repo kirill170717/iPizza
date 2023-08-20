@@ -1,13 +1,13 @@
 package com.rinnedander.presentation.fragments.orders.cart
 
-import com.rinnedander.presentation.core.mvvm.BaseViewModel
-import com.rinnedander.presentation.utils.subscribeToProcessor
-import com.rinnedander.domain.model.order.OrdersTotal
-import com.rinnedander.domain.usecase.order.*
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.processors.BehaviorProcessor
 import io.reactivex.rxjava3.processors.PublishProcessor
 import javax.inject.Inject
+import com.rinnedander.presentation.core.mvvm.BaseViewModel
+import com.rinnedander.presentation.utils.subscribeToProcessor
+import com.rinnedander.domain.model.order.OrdersTotal
+import com.rinnedander.domain.usecase.order.*
 
 class CartViewModel @Inject constructor(
     orderGetWithTotal: OrderGetWithTotal,

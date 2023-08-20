@@ -3,6 +3,7 @@ package com.rinnedander.presentation.fragments.pizza.search
 import android.os.Bundle
 import android.view.View
 import androidx.core.widget.addTextChangedListener
+import javax.inject.Inject
 import com.rinnedander.presentation.core.mvvm.ModelHostFragment
 import com.rinnedander.presentation.core.navigation.Destination
 import com.rinnedander.presentation.core.navigation.Destination.Fragment.Search
@@ -10,7 +11,6 @@ import com.rinnedander.presentation.databinding.FragmentSearchBinding
 import com.rinnedander.presentation.fragments.global.pizza.PizzaRecyclerAdapter
 import com.rinnedander.presentation.utils.supportsChangeAnimations
 import com.rinnedander.domain.model.Pizza
-import javax.inject.Inject
 
 class SearchFragment : ModelHostFragment<SearchViewModel, FragmentSearchBinding, Search>(
     SearchViewModel::class.java,

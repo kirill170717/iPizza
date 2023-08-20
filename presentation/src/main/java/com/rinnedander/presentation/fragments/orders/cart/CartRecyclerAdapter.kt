@@ -1,12 +1,12 @@
 package com.rinnedander.presentation.fragments.orders.cart
 
 import android.view.ViewGroup
+import javax.inject.Inject
 import com.rinnedander.presentation.R
 import com.rinnedander.presentation.core.recycler.SimpleRecyclerAdapter
 import com.rinnedander.presentation.utils.inflate
 import com.rinnedander.domain.model.Pizza
 import com.rinnedander.domain.model.order.Order
-import javax.inject.Inject
 
 class CartRecyclerAdapter @Inject constructor(
     private val eventListener: IEventListener

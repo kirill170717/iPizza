@@ -4,12 +4,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
-import com.rinnedander.presentation.core.navigation.Destination
-import com.rinnedander.presentation.core.screens.BaseBottomSheet
-import com.rinnedander.presentation.utils.showToastError
 import dagger.android.HasAndroidInjector
 import io.reactivex.rxjava3.core.Flowable
 import javax.inject.Inject
+import com.rinnedander.presentation.core.navigation.Destination
+import com.rinnedander.presentation.core.screens.BaseBottomSheet
+import com.rinnedander.presentation.utils.showToastError
 
 abstract class ModelHostBottomSheet<VM : BaseViewModel, VB : ViewBinding, D : Destination.Dialog>(
     viewModelClass: Class<VM>,

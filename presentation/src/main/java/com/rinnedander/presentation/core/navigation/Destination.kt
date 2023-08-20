@@ -47,7 +47,3 @@ sealed interface Destination {
         object OrderSuccess : Fragment
     }
 }
-
-
-
-

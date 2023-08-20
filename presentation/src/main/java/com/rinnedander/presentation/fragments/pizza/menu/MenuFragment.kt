@@ -3,6 +3,7 @@ package com.rinnedander.presentation.fragments.pizza.menu
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isGone
+import javax.inject.Inject
 import com.rinnedander.presentation.R
 import com.rinnedander.presentation.core.mvvm.ModelHostFragment
 import com.rinnedander.presentation.core.navigation.Destination
@@ -14,7 +15,6 @@ import com.rinnedander.presentation.utils.setClickListener
 import com.rinnedander.presentation.utils.showToast
 import com.rinnedander.presentation.utils.supportsChangeAnimations
 import com.rinnedander.domain.model.Pizza
-import javax.inject.Inject
 
 class MenuFragment : ModelHostFragment<MenuViewModel, FragmentMenuBinding, Menu>(
     MenuViewModel::class.java,

@@ -1,11 +1,11 @@
 package com.rinnedander.presentation.fragments.global.pizza
 
 import android.view.ViewGroup
+import javax.inject.Inject
 import com.rinnedander.presentation.R
 import com.rinnedander.presentation.core.recycler.SimpleRecyclerAdapter
 import com.rinnedander.presentation.utils.inflate
 import com.rinnedander.domain.model.Pizza
-import javax.inject.Inject
 
 class PizzaRecyclerAdapter @Inject constructor(
     private val eventListener: IEventListener

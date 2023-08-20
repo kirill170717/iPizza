@@ -1,8 +1,8 @@
 package com.rinnedander.presentation.utils
 
 import androidx.lifecycle.LifecycleOwner
-import com.rinnedander.presentation.core.mvvm.LifecycleObserver
 import io.reactivex.rxjava3.core.Flowable
+import com.rinnedander.presentation.core.mvvm.LifecycleObserver
 
 fun <T : Any> LifecycleOwner.observe(
     observable: Flowable<T>,

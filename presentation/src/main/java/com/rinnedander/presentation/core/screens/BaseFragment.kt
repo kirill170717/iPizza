@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewbinding.ViewBinding
+import dagger.android.support.DaggerFragment
+import javax.inject.Inject
 import com.rinnedander.presentation.core.navigation.Destination
 import com.rinnedander.presentation.core.navigation.INavigator
 import com.rinnedander.presentation.utils.provideArguments
-import dagger.android.support.DaggerFragment
-import javax.inject.Inject
 
 abstract class BaseFragment<VB : ViewBinding, D : Destination.Fragment>(
     private val bindingBlock: (LayoutInflater, ViewGroup?, Boolean) -> VB

@@ -15,14 +15,14 @@ import androidx.viewbinding.ViewBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.rinnedander.presentation.core.navigation.Destination
-import com.rinnedander.presentation.core.navigation.INavigator
-import com.rinnedander.presentation.utils.provideArguments
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
+import com.rinnedander.presentation.core.navigation.Destination
+import com.rinnedander.presentation.core.navigation.INavigator
+import com.rinnedander.presentation.utils.provideArguments
 
 abstract class BaseBottomSheet<VB : ViewBinding, D : Destination.Dialog>(
     private val bindingBlock: (LayoutInflater, ViewGroup?, Boolean) -> VB

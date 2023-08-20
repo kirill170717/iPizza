@@ -1,13 +1,13 @@
 package com.rinnedander.presentation.fragments.pizza.menu
 
+import io.reactivex.rxjava3.core.Flowable
+import io.reactivex.rxjava3.processors.BehaviorProcessor
+import javax.inject.Inject
 import com.rinnedander.presentation.core.mvvm.BaseViewModel
 import com.rinnedander.domain.model.Pizza
 import com.rinnedander.domain.usecase.order.OrderGetTotal
 import com.rinnedander.domain.usecase.pizza.PizzaGetAll
 import com.rinnedander.domain.utils.IConnectionManager
-import io.reactivex.rxjava3.core.Flowable
-import io.reactivex.rxjava3.processors.BehaviorProcessor
-import javax.inject.Inject
 
 class MenuViewModel @Inject constructor(
     private val pizzaGetAll: PizzaGetAll,

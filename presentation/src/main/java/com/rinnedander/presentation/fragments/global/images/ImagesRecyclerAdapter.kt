@@ -1,10 +1,10 @@
 package com.rinnedander.presentation.fragments.global.images
 
 import android.view.ViewGroup
+import javax.inject.Inject
 import com.rinnedander.presentation.R
 import com.rinnedander.presentation.core.recycler.SimpleRecyclerAdapter
 import com.rinnedander.presentation.utils.inflate
-import javax.inject.Inject
 
 class ImagesRecyclerAdapter @Inject constructor() :
     SimpleRecyclerAdapter<String, ImageViewHolder>() {

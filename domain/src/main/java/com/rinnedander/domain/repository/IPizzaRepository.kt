@@ -1,7 +1,7 @@
 package com.rinnedander.domain.repository
 
-import com.rinnedander.domain.model.Pizza
 import io.reactivex.rxjava3.core.Flowable
+import com.rinnedander.domain.model.Pizza
 
 interface IPizzaRepository {
     fun get(id: Int): Flowable<Pizza>

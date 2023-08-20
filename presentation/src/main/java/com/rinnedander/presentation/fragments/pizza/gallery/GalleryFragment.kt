@@ -2,6 +2,7 @@ package com.rinnedander.presentation.fragments.pizza.gallery
 
 import android.os.Bundle
 import android.view.View
+import javax.inject.Inject
 import com.rinnedander.presentation.R
 import com.rinnedander.presentation.core.mvvm.ModelHostFragment
 import com.rinnedander.presentation.core.navigation.Destination
@@ -11,7 +12,6 @@ import com.rinnedander.presentation.fragments.global.images.ImagesRecyclerAdapte
 import com.rinnedander.presentation.utils.addPageChangeListener
 import com.rinnedander.presentation.utils.beautifyDouble
 import com.rinnedander.presentation.utils.setClickListener
-import javax.inject.Inject
 
 class GalleryFragment : ModelHostFragment<GalleryViewModel, FragmentGalleryBinding, Gallery>(
     GalleryViewModel::class.java,
