@@ -1,11 +1,11 @@
 package com.rinnedander.data.local.data
 
+import io.reactivex.rxjava3.core.Completable
+import io.reactivex.rxjava3.core.Flowable
 import com.rinnedander.data.local.IPizzaLocalDataSource
 import com.rinnedander.data.local.database.dao.IPizzaDao
 import com.rinnedander.data.local.entities.PizzaEntity
 import com.rinnedander.domain.model.Pizza
-import io.reactivex.rxjava3.core.Completable
-import io.reactivex.rxjava3.core.Flowable
 
 class PizzaLocalDataSource(
     private val dao: IPizzaDao

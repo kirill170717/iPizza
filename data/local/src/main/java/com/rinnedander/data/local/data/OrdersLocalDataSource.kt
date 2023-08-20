@@ -1,6 +1,8 @@
 package com.rinnedander.data.local.data
 
 import androidx.room.rxjava3.EmptyResultSetException
+import io.reactivex.rxjava3.core.Completable
+import io.reactivex.rxjava3.core.Flowable
 import com.rinnedander.data.local.IOrdersLocalDataSource
 import com.rinnedander.data.local.database.dao.IOrdersDao
 import com.rinnedander.data.local.entities.order.OrderEntity
@@ -8,8 +10,6 @@ import com.rinnedander.data.local.entities.order.OrderWithPizzaEntity
 import com.rinnedander.domain.model.order.Order
 import com.rinnedander.domain.model.order.Order.Defaults.DEFAULT_QUANTITY_STEP
 import com.rinnedander.domain.model.order.Order.Defaults.MIN_QUANTITY
-import io.reactivex.rxjava3.core.Completable
-import io.reactivex.rxjava3.core.Flowable
 
 class OrdersLocalDataSource(
     private val dao: IOrdersDao

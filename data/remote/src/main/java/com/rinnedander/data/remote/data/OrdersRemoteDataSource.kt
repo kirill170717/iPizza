@@ -1,10 +1,10 @@
 package com.rinnedander.data.remote.data
 
+import io.reactivex.rxjava3.core.Completable
 import com.rinnedander.data.remote.IOrdersRemoteDataSource
 import com.rinnedander.data.remote.bodies.order.OrderBody
 import com.rinnedander.data.remote.client.order.IOrderClient
 import com.rinnedander.domain.model.order.Order
-import io.reactivex.rxjava3.core.Completable
 
 class OrdersRemoteDataSource(
     private val client: IOrderClient

@@ -1,12 +1,12 @@
 package com.rinnedander.data.local.database.dao
 
 import androidx.room.*
-import com.rinnedander.data.local.database.PrimaryDatabase.Tables.ORDERS_TABLE
-import com.rinnedander.data.local.entities.order.OrderEntity
-import com.rinnedander.data.local.entities.order.OrderWithPizzaEntity
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Single
+import com.rinnedander.data.local.database.PrimaryDatabase.Tables.ORDERS_TABLE
+import com.rinnedander.data.local.entities.order.OrderEntity
+import com.rinnedander.data.local.entities.order.OrderWithPizzaEntity
 
 @Dao
 interface IOrdersDao {

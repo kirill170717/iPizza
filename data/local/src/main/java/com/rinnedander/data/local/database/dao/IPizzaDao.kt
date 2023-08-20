@@ -4,10 +4,10 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.rinnedander.data.local.database.PrimaryDatabase.Tables.PIZZA_TABLE
-import com.rinnedander.data.local.entities.PizzaEntity
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
+import com.rinnedander.data.local.database.PrimaryDatabase.Tables.PIZZA_TABLE
+import com.rinnedander.data.local.entities.PizzaEntity
 
 @Dao
 interface IPizzaDao {

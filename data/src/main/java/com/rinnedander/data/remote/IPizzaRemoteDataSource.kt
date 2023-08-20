@@ -1,7 +1,7 @@
 package com.rinnedander.data.remote
 
-import com.rinnedander.domain.model.Pizza
 import io.reactivex.rxjava3.core.Single
+import com.rinnedander.domain.model.Pizza
 
 interface IPizzaRemoteDataSource {
     fun getAll(): Single<List<Pizza>>
