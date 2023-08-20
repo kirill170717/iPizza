@@ -1,13 +1,13 @@
 package com.rinnedander.ipizza.ui.activities
 
 import android.os.Bundle
+import dagger.android.support.DaggerAppCompatActivity
 import com.rinnedander.ipizza.R
 import com.rinnedander.presentation.core.navigation.Destination
 import com.rinnedander.presentation.core.navigation.INavigator
 import com.rinnedander.presentation.utils.showToastError
 import com.rinnedander.ipizza.ui.activities.navigation.DialogProvider
 import com.rinnedander.ipizza.ui.activities.navigation.FragmentProvider
-import dagger.android.support.DaggerAppCompatActivity
 
 class MainActivity : DaggerAppCompatActivity(), INavigator {
 

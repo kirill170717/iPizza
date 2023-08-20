@@ -5,11 +5,11 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
-import com.rinnedander.domain.utils.IConnectionManager
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.BackpressureStrategy
 import io.reactivex.rxjava3.core.Flowable
 import javax.inject.Inject
+import com.rinnedander.domain.utils.IConnectionManager
 
 class ConnectionManager @Inject constructor(
     private val context: Context

@@ -1,9 +1,9 @@
 package com.rinnedander.ipizza.ui.app
 
-import com.rinnedander.ipizza.di.components.DaggerApplicationComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 import io.reactivex.rxjava3.plugins.RxJavaPlugins
+import com.rinnedander.ipizza.di.components.DaggerApplicationComponent
 
 class Application : DaggerApplication() {
 

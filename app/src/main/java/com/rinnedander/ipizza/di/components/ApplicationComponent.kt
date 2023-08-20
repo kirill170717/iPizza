@@ -1,16 +1,16 @@
 package com.rinnedander.ipizza.di.components
 
-import com.rinnedander.ipizza.ui.app.Application
-import com.rinnedander.ipizza.di.modules.data.source.core.local.PrimaryDatabaseModule
-import com.rinnedander.ipizza.di.modules.data.source.core.remote.PrimaryClientModule
-import com.rinnedander.ipizza.di.modules.ui.activities.ActivitiesModule
-import com.rinnedander.ipizza.di.modules.ui.application.ApplicationModule
+import javax.inject.Singleton
 import dagger.Component
 import dagger.BindsInstance
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
-import javax.inject.Singleton
+import com.rinnedander.ipizza.ui.app.Application
+import com.rinnedander.ipizza.di.modules.data.source.core.local.PrimaryDatabaseModule
+import com.rinnedander.ipizza.di.modules.data.source.core.remote.PrimaryClientModule
+import com.rinnedander.ipizza.di.modules.ui.activities.ActivitiesModule
+import com.rinnedander.ipizza.di.modules.ui.application.ApplicationModule
 
 @Singleton
 @Component(
