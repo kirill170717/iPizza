@@ -12,22 +12,17 @@ class PizzaLocalDataSource(
 ) : IPizzaLocalDataSource {
 
     override fun insert(pizza: Pizza): Completable =
-        PizzaEntity.toEntity(pizza)
-            .let(dao::insert)
+        PizzaEntity.toEntity(pizza).let(dao::insert)
 
     override fun insertAll(pizzaList: List<Pizza>): Completable =
-        pizzaList.map(PizzaEntity.Companion::toEntity)
-            .let(dao::insertAll)
+        pizzaList.map(PizzaEntity.Companion::toEntity).let(dao::insertAll)
 
     override fun get(id: Int): Flowable<Pizza> =
-        dao.getById(id)
-            .map(PizzaEntity::toPizza)
+        dao.getById(id).map(PizzaEntity::toPizza)
 
     override fun getAll(): Flowable<List<Pizza>> =
-        dao.getAll()
-            .map(PizzaEntity::toPizzaList)
+        dao.getAll().map(PizzaEntity::toPizzaList)
 
     override fun search(query: String): Flowable<List<Pizza>> =
-        dao.search(query)
-            .map(PizzaEntity::toPizzaList)
+        dao.search(query).map(PizzaEntity::toPizzaList)
 }
