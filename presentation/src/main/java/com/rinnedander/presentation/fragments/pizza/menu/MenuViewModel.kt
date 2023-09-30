@@ -7,12 +7,10 @@ import com.rinnedander.presentation.core.mvvm.BaseViewModel
 import com.rinnedander.domain.model.Pizza
 import com.rinnedander.domain.usecase.order.OrderGetTotal
 import com.rinnedander.domain.usecase.pizza.PizzaGetAll
-import com.rinnedander.domain.utils.IConnectionManager
 
 class MenuViewModel @Inject constructor(
     private val pizzaGetAll: PizzaGetAll,
-    ordersGetTotal: OrderGetTotal,
-    connectionManager: IConnectionManager
+    ordersGetTotal: OrderGetTotal
 ) : BaseViewModel() {
 
     private val pizzaListProcessor = BehaviorProcessor.create<List<Pizza>>()
@@ -27,7 +25,6 @@ class MenuViewModel @Inject constructor(
     init {
         updateMenuData()
         ordersGetTotal().subscribe(totalPriceProcessor)
-        connectionManager.listenToConnectionChanges().subscribe(connectionProcessor)
     }
 
     fun updateMenuData() {
