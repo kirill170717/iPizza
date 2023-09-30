@@ -25,10 +25,6 @@ object OrderUseCasesModule {
         OrderRemove(repository)
 
     @Provides
-    fun provideSubmitUseCase(repository: IOrdersRepository) =
-        OrderSubmit(repository)
-
-    @Provides
     fun provideGetTotalUseCase(orderGetAll: OrderGetAll) =
         OrderGetTotal(orderGetAll)
 

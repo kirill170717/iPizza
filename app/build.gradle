@@ -14,7 +14,6 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0.0"
-        buildConfigField("String", "API_URL", "\"https://springboot-kotlin-demo.herokuapp.com/\"")
     }
 
     buildTypes {
@@ -52,10 +51,6 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
 
-    //Http client
-    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
-    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofit_version"
-
     //JSON Serialization
     implementation "com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version"
     implementation "com.squareup.retrofit2:converter-jackson:$jackson_retrofit_version"
@@ -70,6 +65,5 @@ dependencies {
     //Logic
     implementation project(":data")
     implementation project(":data:local")
-    implementation project(":data:remote")
     implementation project(":domain")
 }

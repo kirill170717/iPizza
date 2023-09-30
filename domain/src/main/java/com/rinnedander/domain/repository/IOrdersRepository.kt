@@ -9,5 +9,4 @@ interface IOrdersRepository {
     fun add(pizzaId: Int): Completable
     fun remove(pizzaId: Int): Completable
     fun clear(): Completable
-    fun submit(): Completable
 }

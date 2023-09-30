@@ -8,7 +8,6 @@ import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import com.rinnedander.ipizza.ui.app.Application
 import com.rinnedander.ipizza.di.modules.data.source.core.local.PrimaryDatabaseModule
-import com.rinnedander.ipizza.di.modules.data.source.core.remote.PrimaryClientModule
 import com.rinnedander.ipizza.di.modules.ui.activities.ActivitiesModule
 import com.rinnedander.ipizza.di.modules.ui.application.ApplicationModule
 
@@ -19,8 +18,7 @@ import com.rinnedander.ipizza.di.modules.ui.application.ApplicationModule
         AndroidInjectionModule::class,
         ApplicationModule::class,
         ActivitiesModule::class,
-        PrimaryDatabaseModule::class,
-        PrimaryClientModule::class
+        PrimaryDatabaseModule::class
     ]
 )
 interface ApplicationComponent : AndroidInjector<Application> {

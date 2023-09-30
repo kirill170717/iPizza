@@ -13,8 +13,7 @@ class CartViewModel @Inject constructor(
     orderGetWithTotal: OrderGetWithTotal,
     private val orderAdd: OrderAdd,
     private val orderRemove: OrderRemove,
-    private val ordersClear: OrderClear,
-    private val orderSubmit: OrderSubmit
+    private val ordersClear: OrderClear
 ) : BaseViewModel() {
 
     private val ordersListProcessor = BehaviorProcessor.create<OrdersTotal>()
@@ -46,6 +45,6 @@ class CartViewModel @Inject constructor(
     }
 
     fun placeOrder() {
-        orderSubmit().subscribeToProcessor(orderSubmitProcessor)
+
     }
 }
